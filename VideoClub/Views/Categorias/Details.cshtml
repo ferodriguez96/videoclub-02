@@ -1,0 +1,42 @@
+﻿@model VideoClub.Models.Categoria
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Categoria</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Disenio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Disenio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DiasDeAlquiler)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DiasDeAlquiler)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

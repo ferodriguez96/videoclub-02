@@ -1,0 +1,54 @@
+﻿@model VideoClub.Models.Alquiler
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Alquiler</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Pelicula)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pelicula.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.Apellido)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaAlta)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FechaAlta)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaVencimiento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FechaVencimiento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecioOriginal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrecioOriginal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Devolucion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Devolucion.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
